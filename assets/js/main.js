@@ -49,12 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Botão "Sim, quero o desconto" - Redireciona para Premium
-  if (btnUpgradeYes) {
-    btnUpgradeYes.addEventListener("click", () => {
-      window.location.href = "https://malvoo.pay.yampi.com.br/r/PSSIREOA8O";
-    });
-  }
+  // Botão "Sim, quero o desconto" - Link já está no HTML, não precisa de evento
 
   // Botão "Não, obrigado" - Redireciona para Básico e fecha modal
   if (btnUpgradeNo) {
@@ -182,6 +177,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (whatsappNextBtn) whatsappNextBtn.addEventListener("click", whatsappNextSlide);
     if (whatsappPrevBtn) whatsappPrevBtn.addEventListener("click", whatsappPrevSlide);
+  }
+  
+  // Timer de contagem regressiva
+  const countdownTimer = document.getElementById("countdown-timer");
+  if (countdownTimer) {
+    let minutes = 13;
+    let seconds = 22;
+    
+    const updateTimer = () => {
+      countdownTimer.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      
+      if (seconds === 0) {
+        if (minutes === 0) {
+          // Reset para 13:22 quando chegar em 00:00
+          minutes = 13;
+          seconds = 22;
+        } else {
+          minutes--;
+          seconds = 59;
+        }
+      } else {
+        seconds--;
+      }
+    };
+    
+    // Atualiza a cada segundo
+    setInterval(updateTimer, 1000);
+    // Atualiza imediatamente
+    updateTimer();
   }
   
   console.log("JavaScript inicializado com sucesso!");
