@@ -858,8 +858,8 @@ body {
 .whatsapp-carousel__container {
   overflow: hidden;
   border-radius: 1rem;
-  background: rgba(15, 23, 42, 0.3);
-  padding: 1rem;
+  background: transparent;
+  padding: 0;
 }
 
 .whatsapp-carousel__track {
@@ -885,7 +885,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0.5rem;
+  padding: 0;
 }
 
 .whatsapp-carousel__slide img {

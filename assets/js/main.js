@@ -25,16 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const btnComprarFinal = document.getElementById("btn-comprar-final");
-  if (btnComprarFinal) {
-    btnComprarFinal.addEventListener("click", () => {
-      // Rola até a seção de preços
-      const secaoPrecos = document.getElementById("secao-precos");
-      if (secaoPrecos) {
-        secaoPrecos.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  }
+  // Botão btn-comprar-final foi removido do HTML
+  // const btnComprarFinal = document.getElementById("btn-comprar-final");
+  // if (btnComprarFinal) {
+  //   btnComprarFinal.addEventListener("click", () => {
+  //     // Rola até a seção de preços
+  //     const secaoPrecos = document.getElementById("secao-precos");
+  //     if (secaoPrecos) {
+  //       secaoPrecos.scrollIntoView({ behavior: "smooth", block: "start" });
+  //     }
+  //   });
+  // }
 
   // Botão Pacote Básico - Abre modal de upgrade
   const btnComprarBasico = document.getElementById("btn-comprar-basico");
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnComprarPremium = document.getElementById("btn-comprar-premium");
   if (btnComprarPremium) {
     btnComprarPremium.addEventListener("click", () => {
-      window.location.href = "https://www.ggcheckout.com/checkout/v2/JHjpXo2GxPODEjl0R9Ow";
+      window.location.href = "https://www.ggcheckout.com/checkout/v2/DvvETZRccvxhUrKMbNAJ";
     });
   }
 

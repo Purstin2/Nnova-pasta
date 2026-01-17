@@ -3,6 +3,20 @@ $port = 3000
 $hostname = "+"  # + significa todas as interfaces (0.0.0.0)
 $rootPath = $PSScriptRoot
 
+# Detectar IP da rede local automaticamente
+$localIPs = @()
+try {
+    $networkAdapters = Get-NetIPAddress -AddressFamily IPv4 | Where-Object { 
+        $_.IPAddress -notlike "127.*" -and $_.IPAddress -notlike "169.254.*"
+    }
+    foreach ($adapter in $networkAdapters) {
+        $localIPs += $adapter.IPAddress
+    }
+} catch {
+    # Fallback: usar método alternativo
+    $localIPs = @((Get-NetIPConfiguration | Where-Object { $_.IPv4Address.IPAddress -notlike "127.*" }).IPv4Address.IPAddress)
+}
+
 Write-Host "========================================" -ForegroundColor Green
 Write-Host "Servidor HTTP Local" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
@@ -11,7 +25,14 @@ Write-Host "Diretório: $rootPath" -ForegroundColor Yellow
 Write-Host ""
 Write-Host "Acesse em:" -ForegroundColor Cyan
 Write-Host "  - Local: http://localhost:$port" -ForegroundColor White
-Write-Host "  - Rede: http://172.22.8.109:$port" -ForegroundColor White
+if ($localIPs.Count -gt 0) {
+    foreach ($ip in $localIPs) {
+        Write-Host "  - Rede: http://$ip`:$port" -ForegroundColor White
+    }
+} else {
+    Write-Host "  - Rede: http://[SEU_IP_LOCAL]:$port" -ForegroundColor Yellow
+    Write-Host "    (Execute 'ipconfig' para descobrir seu IP)" -ForegroundColor Gray
+}
 Write-Host ""
 Write-Host "Pressione Ctrl+C para parar o servidor" -ForegroundColor Gray
 Write-Host "========================================" -ForegroundColor Green

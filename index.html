@@ -8,6 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <!-- Otimização de velocidade VTurb -->
+    <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+    <link rel="preload" href="https://scripts.converteai.net/f1ca2778-a3d8-47fc-a977-00f899bafe47/players/696b1d809e020389f6676e8c/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/f1ca2778-a3d8-47fc-a977-00f899bafe47/players/696b22d6dd2fe7b4886b4aed/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/f1ca2778-a3d8-47fc-a977-00f899bafe47/696b1d6e9e020389f6676e7f/main.m3u8" as="fetch">
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
     <!-- CSS principal do projeto -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <!-- Script Utmify -->
@@ -66,14 +76,14 @@
 
         <div class="hero__media">
           <div class="video-card video-card--primary">
-            <div class="video-card__frame video-card__frame--vertical">
-              <iframe
-                src="https://scripts.converteai.net/6decdefe-9efe-43c5-9266-605ea40e9c83/players/6943abee387adf5a89ed4d51/v4/embed.html?utm_source=Copycat+Ads&utm_medium=chrome_extension"
-                title="VSL Ultra Pack STL 2026"
-                frameborder="0"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
+            <div style="position: relative; width: 100%; max-width: 400px; margin: 0 auto;">
+              <vturb-smartplayer id="vid-696b1d809e020389f6676e8c" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+              <script type="text/javascript">
+                var s=document.createElement("script");
+                s.src="https://scripts.converteai.net/f1ca2778-a3d8-47fc-a977-00f899bafe47/players/696b1d809e020389f6676e8c/v4/player.js";
+                s.async=!0;
+                document.head.appendChild(s);
+              </script>
             </div>
 
             <ul class="hero-benefits">
@@ -104,17 +114,16 @@
       <!-- SEÇÃO ÁREA DE MEMBROS / DEMONSTRAÇÃO -->
       <section class="section section--light">
         <div class="container section__container section__container--center">
-          <h2 class="section__title">ESTE PACK FOI FEITO PARA FACILITAR A SUA VIDA...</h2>
-
-          <div class="video-card video-card--secondary">
-            <div class="video-card__frame video-card__frame--wide">
-              <iframe
-                src="https://scripts.converteai.net/6decdefe-9efe-43c5-9266-605ea40e9c83/players/691d301ded6b7c89600af875/v4/embed.html?utm_source=Copycat+Ads&utm_medium=chrome_extension"
-                title="Área de membros Ultra Pack STL 2026"
-                frameborder="0"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
+          <h2 class="section__title" style="margin-bottom: 1rem;">ESTE PACK FOI FEITO PARA FACILITAR A SUA VIDA...</h2>
+          <div class="video-card video-card--secondary" style="margin-top: 0;">
+            <div class="video-card__frame video-card__frame--wide" style="padding-top: 0; position: relative; height: auto;">
+              <vturb-smartplayer id="vid-696b22d6dd2fe7b4886b4aed" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>
+              <script type="text/javascript">
+                var s=document.createElement("script");
+                s.src="https://scripts.converteai.net/f1ca2778-a3d8-47fc-a977-00f899bafe47/players/696b22d6dd2fe7b4886b4aed/v4/player.js";
+                s.async=!0;
+                document.head.appendChild(s);
+              </script>
             </div>
           </div>
 
@@ -435,8 +444,8 @@
               </div>
             </article>
 
-            <p class="bonus-special__total">
-              Esses bônus valem R$ 479,10 e somente hoje você recebe eles GRATUITAMENTE!
+            <p class="bonus-special__total" style="color: white;">
+              Esses bônus valem <span style="color: green;">R$ <span style="font-weight: bold; color: green;">479,10</span></span> e somente hoje você recebe eles GRATUITAMENTE!
             </p>
           </div>
         </div>
@@ -458,19 +467,19 @@
               <div class="whatsapp-carousel__container">
                 <div class="whatsapp-carousel__track">
                   <div class="whatsapp-carousel__slide">
-                    <img src="https://i.postimg.cc/5Qb0V5G8/dep-mega-pack-03.png" alt="Depoimento WhatsApp 1" loading="lazy" />
+                    <img src="https://i.postimg.cc/L5ZZjN3C/dep-mega-pack-01.webp" alt="Depoimento WhatsApp 1" loading="lazy" />
                   </div>
                   <div class="whatsapp-carousel__slide">
-                    <img src="https://i.postimg.cc/YGSsWmMD/Imagem-do-Whats-App-de-2025-11-19-03-29-57-76edba69.png" alt="Depoimento WhatsApp 2" loading="lazy" />
+                    <img src="https://i.postimg.cc/4dvkjzMk/Imagem-do-Whats-App-de-2025-11-19-a(s)-03-29-56-16b1fb6a.webp" alt="Depoimento WhatsApp 2" loading="lazy" />
                   </div>
                   <div class="whatsapp-carousel__slide">
-                    <img src="https://i.postimg.cc/FdKBLJNw/Imagem-do-Whats-App-de-2025-11-19-03-29-56-b9eb7d9a.png" alt="Depoimento WhatsApp 3" loading="lazy" />
+                    <img src="https://i.postimg.cc/NFrrRpkP/dep-mega-pack-02-1.webp" alt="Depoimento WhatsApp 3" loading="lazy" />
                   </div>
                   <div class="whatsapp-carousel__slide">
-                    <img src="https://i.postimg.cc/sQ2NhZsw/Imagem-do-Whats-App-de-2025-11-19-03-29-56-16b1fb6a.png" alt="Depoimento WhatsApp 4" loading="lazy" />
+                    <img src="https://i.postimg.cc/rmGX7Sby/Imagem-do-Whats-App-de-2025-11-19-a(s)-03-29-56-b9eb7d9a.webp" alt="Depoimento WhatsApp 4" loading="lazy" />
                   </div>
                   <div class="whatsapp-carousel__slide">
-                    <img src="https://i.postimg.cc/V0m689Tj/dep-mega-pack-02-1.png" alt="Depoimento WhatsApp 5" loading="lazy" />
+                    <img src="https://i.postimg.cc/cC88fXBk/dep-mega-pack-03.webp" alt="Depoimento WhatsApp 5" loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -563,7 +572,7 @@
                 <strong>ESCOLHER O BÁSICO</strong>
               </button>
               <div class="pricing-card__badges">
-                <p class="pricing-card__security-text">Garantia de 14 dias, Compra Segura, Privacidade</p>
+                <img src="https://i.ibb.co/ycFWVSHs/Compra-Segura.png" alt="Compra Segura" style="max-width: 50%; height: auto;" />
               </div>
             </article>
 
@@ -597,7 +606,7 @@
                 <strong>QUERO ESSA SUPER OFERTA!</strong>
               </button>
               <div class="pricing-card__badges">
-                <p class="pricing-card__security-text">Garantia de 14 dias, Compra Segura, Privacidade</p>
+                <img src="https://i.ibb.co/ycFWVSHs/Compra-Segura.png" alt="Compra Segura" style="max-width: 100%; height: auto;" />
               </div>
             </article>
           </div>
@@ -608,13 +617,7 @@
       <section class="section section--light">
         <div class="container section__container section__container--center">
           <div class="guarantee-badge">
-            <div class="guarantee-badge__outer">
-              <div class="guarantee-badge__inner">
-                <span class="guarantee-badge__text-top">100% DINHEIRO DE VOLTA</span>
-                <span class="guarantee-badge__number">14 DIAS</span>
-                <span class="guarantee-badge__text-bottom">GARANTIDO</span>
-              </div>
-            </div>
+            <img src="https://i.ibb.co/QFW1kybk/MPSTL-Garntia.webp" alt="100% Dinheiro de Volta - 14 Dias Garantido" style="max-width: 30%; height: auto;" />
           </div>
           <h2 class="section__title">GARANTIA INCONDICIONAL DE 14 DIAS</h2>
           <p class="section__subtitle">
@@ -701,18 +704,6 @@
         </div>
       </section>
 
-      <!-- CTA FINAL -->
-      <section class="section section--light">
-        <div class="container section__container section__container--center">
-          <h2 class="section__title">PRONTO PARA TRANSFORMAR SUA IMPRESSORA EM UMA MÁQUINA DE LUCRO?</h2>
-          <p class="section__subtitle">
-            Clique no botão abaixo e garanta agora o acesso ao Ultra Pack STL 2026 com todos os modelos organizados.
-          </p>
-          <button class="btn-primary btn-primary--full" id="btn-comprar-final">
-            <strong>QUERO O ULTRA PACK STL 2026 COM DESCONTO</strong>
-          </button>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
@@ -767,7 +758,7 @@
             </li>
             <li>
               <span class="upgrade-modal__check">✓</span>
-              Bônus exclusivo de natal
+              Bônus exclusivo de ano novo
             </li>
             <li>
               <span class="upgrade-modal__check">✓</span>
