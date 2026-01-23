@@ -45,10 +45,13 @@ Site de landing page moderna e responsiva desenvolvida para apresentar o Mega Un
 
 ```bash
 # Navegue até a pasta do projeto
-cd "C:\Users\Vibox\Downloads\Nova pasta"
+cd "c:\Users\WDAGUtilityAccount\Downloads\Nnova-pasta"
 
-# Execute o servidor HTTP
-python -m http.server 8000 --bind 0.0.0.0
+# Execute o servidor HTTP (PowerShell)
+powershell -ExecutionPolicy Bypass -File .\servidor-local.ps1
+
+# Ou usando Python (se disponível)
+python -m http.server 3000 --bind 0.0.0.0
 ```
 
 Acesse no navegador:

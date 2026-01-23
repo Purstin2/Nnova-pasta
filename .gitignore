@@ -22,3 +22,6 @@ npm-debug.log*
 *.bak
 *~
 .env
+
+# Pastas duplicadas/antigas
+Nova-pasta/
