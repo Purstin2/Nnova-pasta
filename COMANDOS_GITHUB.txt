@@ -1,6 +1,6 @@
 ===========================================
 COMANDOS PARA ENVIAR AO GITHUB
-Repositorio: nova-pasta
+Repositorio: Nnova-pasta
 ===========================================
 
 SUBSTITUA "SEU_USUARIO" pelo seu nome de usuario do GitHub!
@@ -10,7 +10,7 @@ SUBSTITUA "SEU_USUARIO" pelo seu nome de usuario do GitHub!
 2. Execute os comandos abaixo (um por vez):
 
 git init
-git remote add origin https://github.com/SEU_USUARIO/nova-pasta.git
+git remote add origin https://github.com/SEU_USUARIO/Nnova-pasta.git
 git add .
 git commit -m "Atualizacao: melhorias no design e funcionalidades"
 git branch -M main
@@ -29,7 +29,7 @@ PROBLEMAS?
 ===========================================
 
 - Se der erro de "repository not found":
-  Crie o repositorio "nova-pasta" no GitHub primeiro!
+  Crie o repositorio "Nnova-pasta" no GitHub primeiro!
 
 - Se der erro de autenticacao:
   Configure suas credenciais:

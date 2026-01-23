@@ -52,13 +52,13 @@ Se essa página aparecer, o servidor está funcionando e o problema está no `in
 taskkill /F /PID [PID_DO_PROCESSO]
 
 # Iniciar novo servidor
-cd "C:\Users\Vibox\Downloads\Nova pasta"
+cd "C:\Users\Vibox\Downloads\Nnova-pasta"
 python -m http.server 8000 --bind 0.0.0.0
 ```
 
 ### Verificar Arquivos
 ```powershell
-cd "C:\Users\Vibox\Downloads\Nova pasta"
+cd "C:\Users\Vibox\Downloads\Nnova-pasta"
 dir index.html
 dir assets\css\styles.css
 dir assets\js\main.js

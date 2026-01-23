@@ -1,7 +1,7 @@
 # Script simplificado para enviar ao GitHub
-# Repositório: nova-pasta
+# Repositório: Nnova-pasta
 
-Write-Host "=== Enviar para GitHub: nova-pasta ===" -ForegroundColor Cyan
+Write-Host "=== Enviar para GitHub: Nnova-pasta ===" -ForegroundColor Cyan
 Write-Host ""
 
 # Tenta encontrar Git em locais comuns
@@ -47,7 +47,7 @@ if ([string]::IsNullOrWhiteSpace($githubUser)) {
     exit 1
 }
 
-$repoName = "nova-pasta"
+$repoName = "Nnova-pasta"
 $repoUrl = "https://github.com/$githubUser/$repoName.git"
 
 Write-Host ""
@@ -99,7 +99,7 @@ if ($LASTEXITCODE -eq 0) {
 } else {
     Write-Host ""
     Write-Host "ERRO ao enviar. Verifique:" -ForegroundColor Red
-    Write-Host "1. Se o repositorio 'nova-pasta' existe no GitHub" -ForegroundColor White
+    Write-Host "1. Se o repositorio 'Nnova-pasta' existe no GitHub" -ForegroundColor White
     Write-Host "2. Suas credenciais Git" -ForegroundColor White
     Write-Host "3. Veja GITHUB_INSTRUCOES.md para mais ajuda" -ForegroundColor White
 }

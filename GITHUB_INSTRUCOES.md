@@ -1,6 +1,6 @@
 # Instruções para Enviar ao GitHub
 
-## Repositório: nova-pasta
+## Repositório: Nnova-pasta
 
 ### Opção 1: Usando Git (Recomendado)
 
@@ -8,17 +8,17 @@ Se você tem Git instalado, execute os seguintes comandos no PowerShell ou CMD:
 
 ```powershell
 # 1. Navegue até a pasta do projeto
-cd "C:\Users\WDAGUtilityAccount\Downloads\Nova pasta"
+cd "C:\Users\WDAGUtilityAccount\Downloads\Nnova-pasta"
 
 # 2. Inicialize o repositório Git (se ainda não foi feito)
 git init
 
 # 3. Adicione o remote do GitHub (substitua SEU_USUARIO pelo seu usuário do GitHub)
-git remote add origin https://github.com/SEU_USUARIO/nova-pasta.git
+git remote add origin https://github.com/SEU_USUARIO/Nnova-pasta.git
 
 # Se já existir um remote, remova primeiro:
 # git remote remove origin
-# git remote add origin https://github.com/SEU_USUARIO/nova-pasta.git
+# git remote add origin https://github.com/SEU_USUARIO/Nnova-pasta.git
 
 # 4. Adicione todos os arquivos
 git add .
@@ -38,15 +38,15 @@ git push -u origin main
 1. Baixe e instale o GitHub Desktop: https://desktop.github.com/
 2. Abra o GitHub Desktop
 3. Clique em "File" > "Add Local Repository"
-4. Selecione a pasta "Nova pasta"
+4. Selecione a pasta "Nnova-pasta"
 5. Se o repositório não existir no GitHub, clique em "Publish repository"
-6. Nome do repositório: `nova-pasta`
+6. Nome do repositório: `Nnova-pasta`
 7. Marque "Keep this code private" se desejar (opcional)
 8. Clique em "Publish repository"
 
 ### Opção 3: Upload Manual
 
-1. Acesse https://github.com/SEU_USUARIO/nova-pasta
+1. Acesse https://github.com/SEU_USUARIO/Nnova-pasta
 2. Clique em "uploading an existing file"
 3. Arraste todos os arquivos da pasta para o GitHub
 4. Adicione uma mensagem de commit
@@ -64,7 +64,7 @@ Se não estiver instalado, baixe em: https://git-scm.com/download/win
 ### Problemas Comuns
 
 **Erro: "repository not found"**
-- Verifique se o repositório `nova-pasta` existe no seu GitHub
+- Verifique se o repositório `Nnova-pasta` existe no seu GitHub
 - Verifique se o nome de usuário está correto
 
 **Erro: "authentication failed"**

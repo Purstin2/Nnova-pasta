@@ -1,4 +1,4 @@
-# Script para enviar mudanças para o GitHub - Repositório: nova-pasta
+# Script para enviar mudanças para o GitHub - Repositório: Nnova-pasta
 Write-Host "🚀 Conectando ao GitHub e enviando mudanças..." -ForegroundColor Cyan
 Write-Host ""
 
@@ -20,7 +20,7 @@ if ([string]::IsNullOrWhiteSpace($githubUser)) {
 }
 
 # Nome do repositório
-$repoName = "nova-pasta"
+$repoName = "Nnova-pasta"
 
 Write-Host ""
 Write-Host "📋 Configuração:" -ForegroundColor Yellow
@@ -122,7 +122,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "   - Conflitos com código remoto" -ForegroundColor White
     Write-Host ""
     Write-Host "💡 Tente:" -ForegroundColor Yellow
-    Write-Host "   1. Criar o repositório 'nova-pasta' no GitHub" -ForegroundColor White
+    Write-Host "   1. Criar o repositório 'Nnova-pasta' no GitHub" -ForegroundColor White
     Write-Host "   2. Verificar suas credenciais Git" -ForegroundColor White
     Write-Host "   3. Executar: git pull origin main --allow-unrelated-histories" -ForegroundColor White
 }
