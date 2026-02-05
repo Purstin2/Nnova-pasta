@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnComprarPremium = document.getElementById("btn-comprar-premium");
   if (btnComprarPremium) {
     btnComprarPremium.addEventListener("click", () => {
-      redirectWithUtm("hhttps://pay.kiwify.com.br/jOFSQm9");
+      redirectWithUtm("https://pay.kiwify.com.br/jOFSQm9");
     });
   }
 
