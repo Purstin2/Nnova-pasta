@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnUpgradeYes.addEventListener("click", (e) => {
       e.preventDefault();
       // Link do botão SIM (Pega do HTML ou usa o fixo se vazio)
-      const urlSim = btnUpgradeYes.getAttribute("href") || "https://www.ggcheckout.com/checkout/v2/JHjpXo2GxPODEjl0R9Ow";
+      const urlSim = btnUpgradeYes.getAttribute("href") || "https://pay.kiwify.com.br/4cPVPAG";
       redirectWithUtm(urlSim);
     });
   }
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault(); // Previne navegação imediata se for link
       upgradeModal.classList.remove("active");
       // Link do botão NÃO (Pega do HTML ou usa o fixo se vazio)
-      const urlNao = btnUpgradeNo.getAttribute("href") || "https://www.ggcheckout.com/checkout/v2/gx1Lkf8Iorj6dCzd2eXY";
+      const urlNao = btnUpgradeNo.getAttribute("href") || "https://pay.kiwify.com.br/AZaPnyc";
       // Pequeno delay para a modal fechar visualmente antes de ir
       setTimeout(() => redirectWithUtm(urlNao), 200);
     });
