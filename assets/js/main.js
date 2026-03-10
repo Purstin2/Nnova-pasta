@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnComprarPremium.addEventListener("click", function(e) {
       e.preventDefault();
       // Pega o link que você colocou no botão lá no editor visual
-      const urlAlvo = this.getAttribute("href") || "https://pay.kirvano.com/b33083cc-5c50-4374-88d2-5c5e210b409c"; 
+      const urlAlvo = this.getAttribute("href") || "https://seguro.ultrapack3d.com/checkout/v5/W7rKiwRLEHqVamCGiCte"; 
       redirectWithUtm(urlAlvo);
     });
   }
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnUpgradeYes.addEventListener("click", (e) => {
       e.preventDefault();
       // Link do botão SIM (Pega do HTML ou usa o fixo se vazio)
-      const urlSim = btnUpgradeYes.getAttribute("href") || "https://pay.kirvano.com/0224841e-9be5-445c-8b8a-5146d2fe616f";
+      const urlSim = btnUpgradeYes.getAttribute("href") || "https://seguro.ultrapack3d.com/checkout/v5/XleQzKlnCDYG62t9W1ya";
       redirectWithUtm(urlSim);
     });
   }
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault(); // Previne navegação imediata se for link
       upgradeModal.classList.remove("active");
       // Link do botão NÃO (Pega do HTML ou usa o fixo se vazio)
-      const urlNao = btnUpgradeNo.getAttribute("href") || "https://pay.kirvano.com/a5f1ebb4-f48d-44a8-97ea-41037e345355";
+      const urlNao = btnUpgradeNo.getAttribute("href") || "https://seguro.ultrapack3d.com/checkout/v5/YKMpZVs5QCLDfaReyYp7";
       // Pequeno delay para a modal fechar visualmente antes de ir
       setTimeout(() => redirectWithUtm(urlNao), 200);
     });
