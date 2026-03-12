@@ -127,15 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. BOTÕES ESPECÍFICOS (Lógica preservada mas melhorada)
   // ==============================================================
 
-  // Botão Rolar para Preços
-  const btnComprar = document.getElementById("btn-comprar");
-  if (btnComprar) {
-    btnComprar.addEventListener("click", () => {
-      const secaoPrecos = document.getElementById("secao-precos");
-      if (secaoPrecos) secaoPrecos.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }
-
   // Botão Pacote Premium (Agora pega o link do HTML automaticamente)
   const btnComprarPremium = document.getElementById("btn-comprar-premium");
   if (btnComprarPremium) {
