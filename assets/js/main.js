@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault(); // Previne navegação imediata se for link
       upgradeModal.classList.remove("active");
       // Link do botão NÃO (Pega do HTML ou usa o fixo se vazio)
-        const urlNao = btnUpgradeNo.getAttribute("href") || "http://pagamento.ultrapack3d.com//?checkout=mega-biblioteca-premium-100k-3d-iyd2";
+        const urlNao = btnUpgradeNo.getAttribute("href") || "http://pagamento.ultrapack3d.com//?checkout=mega-biblioteca-premium-100k-nedv";
       // Pequeno delay para a modal fechar visualmente antes de ir
       setTimeout(() => redirectWithUtm(urlNao), 200);
     });
@@ -181,14 +181,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Botão Garantia (Rolagem)
-  const btnComprarGarantia = document.getElementById("btn-comprar-garantia");
-  if (btnComprarGarantia) {
-    btnComprarGarantia.addEventListener("click", () => {
-      const secaoPrecos = document.getElementById("secao-precos");
-      if (secaoPrecos) secaoPrecos.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+  // Botão Garantia + qualquer link apontando para #secao-precos (Rolagem suave)
+  function scrollToOfertas(e) {
+    e && e.preventDefault();
+    const secaoPrecos = document.getElementById("secao-precos");
+    if (secaoPrecos) secaoPrecos.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+
+  const btnComprarGarantia = document.getElementById("btn-comprar-garantia");
+  if (btnComprarGarantia) btnComprarGarantia.addEventListener("click", scrollToOfertas);
+
+  document.querySelectorAll('a[href="#secao-precos"]').forEach(link => {
+    link.addEventListener("click", scrollToOfertas);
+  });
 
   // ==============================================================
   // 4. CARROSSEIS (Galeria e Whatsapp)
