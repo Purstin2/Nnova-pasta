@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnComprarPremium.addEventListener("click", function(e) {
       e.preventDefault();
       // Pega o link que você colocou no botão lá no editor visual
-        const urlAlvo = this.getAttribute("href") || "http://pagamento.ultrapack3d.com//?checkout=mega-biblioteca-premium-100k-3d-304n"; 
+        const urlAlvo = this.getAttribute("href") || "http://pagamento.ultrapack3d.com//?checkout=mega-biblioteca-premium-100k-3d-iyd2"; 
       redirectWithUtm(urlAlvo);
     });
   }
